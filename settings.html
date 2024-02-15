@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>App Settings</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+    <script src="settings.js" defer></script>
+
+    
+   
+  <!--  <script src="jsmpeg.min.js" defer></script>-->
+  </head>
+  <body>
+    <header>
+    </header>
+    <section>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 ">
+
+                   <h5> Stream URLs</h5> 
+                   <div class="mb-3">
+                    <label for="diver1url" class="form-label">Diver 1</label>
+                    <input class="form-control" type="url" id="diver1url" value="" placeholder="rtsp://{path}"/>
+                  </div>
+                  <div class="mb-3">
+                    <label for="diver2url" class="form-label">Diver 2</label>
+                    <input class="form-control" type="url" id="diver2url" value="" placeholder="rtsp://{path}"/>
+                  </div>
+                   
+                  <div class="mb-3">
+                    <label for="diver3url" class="form-label">Diver 3</label>
+                    <input class="form-control" type="url" id="diver3url" value="" placeholder="rtsp://{path}"/>
+                  </div>
+             
+                  <div class="mb-3">
+                    <label for="diver4url" class="form-label">Diver 4</label>
+                    <input class="form-control" type="url" id="diver4url" value="" placeholder="rtsp://{path}"/>
+                  </div>
+                 
+                    <button class="btn btn-primary" id="savesettingsbtn">Save Changes</button>
+                </div>
+            </div>
+        </div>
+    </section>
+  </body>
+  </html>

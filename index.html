@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Diver Cam Recorder</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.min.css"/>
+    <link rel="stylesheet" href="css/index.css" />
+
+    <script src="renderer.js " defer></script>
+    <!--<script src="../node_modules/mpegts.js/dist/mpegts.js"></script>-->
+   <script src="mpegts.js" defer></script>
+  <!--  <script src="jsmpeg.min.js" defer></script>-->
+  </head>
+  <body>
+    <header>
+    </header>
+    <section>
+    </section>
+    <div class="container-fluid">
+      <div class="row">
+        <br/>
+        <div class="col-6 video-container">
+          <div class="ratio ratio-16x9">
+            <video id="diver1" > </video>
+          </div>
+          <div class="input-group mb-3 ">
+            <span class="input-group-text bg-dark text-white" id="timeupdate1"></span>
+            <input type="hidden"  id="diver1url" class="form-control bg-dark text-white"  value="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" placeholder="RTSP URL" aria-label="rtsp url" aria-describedby="timeupdate">
+            <button id="diver1reloadbtn" class="btn btn-dark">
+
+              <i class="bi-arrow-clockwise"></i>
+
+            </button> 
+          </div>
+          </div>
+        <div class="col-6  video-container">
+          <div class="ratio ratio-16x9">
+            <video id="diver2"   ></video>
+          </div>
+          <div class="input-group mb-3 ">
+          <span class="input-group-text bg-dark text-white" id="timeupdate2"></span>
+          <input type="hidden" id="diver2url" value="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"/>
+          <button  class="btn btn-dark" id="diver2reloadbtn"> <i class="bi-arrow-clockwise"></i></button> 
+        <!--  <button  class="btn btn-dark" id="diver2stopbtn"> <i class="bi-stop"></i></button>--> 
+        </div>
+        </div>
+        <div class="col-6 video-container">
+          <div class="ratio ratio-16x9">
+            <video id="diver3" >    </video>
+          </div>
+          <div class="input-group mb-3 ">
+          <span class=" input-group-text bg-dark text-white" id="timeupdate3"></span>
+          <input type="hidden" id="diver3url" value="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4"/><button   class="btn btn-dark" id="diver3reloadbtn"> <i class="bi-arrow-clockwise"></i></button> 
+        </div>
+        </div>
+        <div class="col-6  video-container">
+          <div class="ratio ratio-16x9">
+            <video id="diver4"   ></video>
+          </div>
+          <div class="input-group mb-3 ">
+          <span class="input-group-text bg-dark text-white" id="timeupdate4"></span>
+          <input type="hidden" id="diver4url" value="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4"/><button   class="btn btn-dark" id="diver4reloadbtn"> <i class="bi-arrow-clockwise"></i></button> 
+        </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
